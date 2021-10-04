@@ -48,7 +48,4 @@
     //4
     const newArrayOfAge = cohort7.filter(element => element.Age > 20);
     console.log(newArrayOfAge);
-
-    // console.log(cohort7);
-
 }());
