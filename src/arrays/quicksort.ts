@@ -1,5 +1,5 @@
 (function(){
-    const array : number[] = [1,8,9,4,32,6,-1,6];
+    const array : number[] = [1,8,9,4,32,6,-1,56];
     quickSort(array, 0, array.length-1);
     console.log(array);
 
@@ -13,8 +13,7 @@
 
     function partitionTheArray(array: number[], low: number, high: number): number{
         let i: number = low-1;
-        let pivot: number = array[high];
-
+        let pivot: number = array[high]
         for(let j=low; j <= high-1; j++){
             if (array[j] < pivot){
                 i=i+1;
