@@ -1,9 +1,9 @@
 export function insertionSort(array: number[]){
-    function swap(array: number[], i: number, benchmarkOfSorted: number) {
-        let temp: number = array[i];
-        array[i] = array[benchmarkOfSorted];
-        array[benchmarkOfSorted] = temp;
-    }
+    // function swap(array: number[], i: number, benchmarkOfSorted: number) {
+    //     let temp: number = array[i];
+    //     array[i] = array[benchmarkOfSorted];
+    //     array[benchmarkOfSorted] = temp;
+    // }
 
     for (let i = 1; i < array.length; i++) {
         let benchmark: number = i-1;

@@ -35,14 +35,14 @@
     console.log();
 
 
-    //3
-    let favourite_foods: string[] = ["beans", "garri", "rice", "moimoi"];
-    let count: number = 0;
-    cohort7.forEach(element =>{
-        // element["favourite_food"] = favourite_foods[count];
-        count += 1;
-    })
-    console.log();
+    // //3
+    // let favourite_foods: string[] = ["beans", "garri", "rice", "moimoi"];
+    // let count: number = 0;
+    // cohort7.forEach(element =>{
+    //     // element["favourite_food"] = favourite_foods[count];
+    //     count += 1;
+    // })
+    // console.log();
     console.log(cohort7);
 
     //4
