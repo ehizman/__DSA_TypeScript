@@ -1,7 +1,26 @@
-export function findMedian(arrayOne: number[], arrayTwo: number[]): number{
-    let newArray: number[] = arrayOne.concat(arrayTwo).sort();
-    if (newArray.length % 2 === 0){
-        return (newArray[Math.floor(newArray.length / 2)] + newArray[Math.floor(newArray.length/2) - 1])/2;
+export function findMedian(nums1: number[], nums2: number[]): number{
+    let combinedArray: number[] = (nums1.concat(nums2));
+    function swap(combinedArray: number[], i: number, j: number) {
+        let temp = combinedArray[i];
+        combinedArray[i] = combinedArray[j];
+        combinedArray[j] = temp;
     }
-    return newArray[Math.floor(newArray.length/2)]
+
+    function sort(combinedArray: number[]) {
+        for (let i = 0; i < combinedArray.length-1; i++) {
+            for (let j = i+1; j < combinedArray.length; j++) {
+                if (combinedArray[i] > combinedArray[j]){
+                    swap(combinedArray, i, j);
+                }
+            }
+        }
+    }
+
+    sort(combinedArray);
+    if (combinedArray.length%2===1){
+        return (combinedArray[Math.floor(combinedArray.length/2)])
+    }
+    else{
+        return (combinedArray[Math.floor(combinedArray.length/2)] + combinedArray[Math.floor(combinedArray.length/2)-1])/2
+    }
 }
