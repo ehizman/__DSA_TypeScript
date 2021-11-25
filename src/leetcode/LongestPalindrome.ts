@@ -7,7 +7,7 @@ export function findLongestPalindromeSubstring(str: string): string{
             start--;
             end++;
         }
-        if (max < end-start+1){
+        if (max < end-start-1){
             resultStart = start+1;
             max = end-start-1;
         }
